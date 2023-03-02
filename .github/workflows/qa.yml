@@ -1,0 +1,12 @@
+name: QA
+on:
+  workflow_dispatch:
+
+jobs:
+  qa-job:
+    runs-on: self-hosted
+    environment: QA
+    steps:
+      - name: Echo description
+        run: |
+          echo ${{ vars.ENV_DESCRIPTION }}
