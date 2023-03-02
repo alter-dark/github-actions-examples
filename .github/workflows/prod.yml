@@ -4,7 +4,7 @@ on:
 
 jobs:
   qa-job:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     environment: Production
     steps:
       - name: Echo description
